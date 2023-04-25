@@ -1,11 +1,11 @@
 import React from "react";
+import DeviceDetails from "../DeviceDetails/DeviceDetails";
 
 const Device = (props) => {
-  console.log(props.name);
   return (
     <div>
       <h3>I have a device: {props.name}</h3>
-      <p>Price: {props.price}</p>
+      <DeviceDetails price={props.price}></DeviceDetails>
     </div>
   );
 };
